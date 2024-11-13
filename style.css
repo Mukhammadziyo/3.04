@@ -1,0 +1,486 @@
+@import url("https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  transition: 0.3s;
+}
+
+html {
+  scroll-behavior: smooth;
+  height: 100%;
+  font-size: 62.5%;
+}
+
+body {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  font-weight: 400;
+  font-size: 1.6rem;
+  color: #232536;
+  font-family: "League Spartan", sans-serif;
+}
+
+.main {
+  flex-grow: 1;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+a {
+  display: inline-block;
+  text-decoration: none;
+}
+
+.container {
+  height: 100%;
+  max-width: 1366px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 10rem;
+  padding-right: 10rem;
+}
+
+.hero {
+  background-image: url(images/hero-bg-desktop.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 120vh;
+  padding: 6.5rem 0 19.5rem 0;
+}
+
+.hero__container {
+  display: flex;
+  flex-direction: column;
+  row-gap: 15rem;
+
+  .hero__logo {
+    width: 103px;
+  }
+}
+
+.hero__text {
+  display: flex;
+  flex-direction: column;
+  row-gap: 1rem;
+
+  .hero__heading {
+    font-weight: 300;
+    font-size: 8rem;
+    line-height: 8rem;
+    letter-spacing: -0.1rem;
+    color: #ffffff;
+    width: 550px;
+  }
+
+  .hero__paragraph {
+    font-weight: 400;
+    font-size: 2rem;
+    line-height: 3rem;
+    color: #ffffff;
+    width: 460px;
+  }
+
+  .hero__button {
+    font-weight: 600;
+    font-size: 1.7rem;
+    line-height: 1.6rem;
+    color: #ffffff;
+    letter-spacing: 0.25rem;
+    padding: 2.5rem 5.5rem 2.3rem 5.4rem;
+    border: 0.1rem solid #ffffff;
+    width: 270px;
+    margin-top: 4rem;
+    background-color: #111111;
+
+    &:hover {
+      background-color: white;
+      color: black;
+      border-color: white;
+    }
+  }
+}
+
+/* Enjoy */
+
+/* .enjoyable-place {
+} */
+
+.enjoyable-place__container {
+  background-image: url(images/enjoy-bg.svg);
+  background-repeat: no-repeat;
+  background-position-y: 32rem;
+  background-position-x: left;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  bottom: 5rem;
+}
+
+.enjoyable-place__image {
+  width: 540px;
+  height: 720px;
+  /* box-shadow: 0 10px 20px #979797, 0 6px 20px#979797; */
+}
+
+.enjoyable-place__text {
+  display: flex;
+  flex-direction: column;
+
+  .enjoyable-place__text-img {
+    width: 71px;
+    height: 7px;
+  }
+
+  .enjoyable-place__text-heading {
+    font-weight: 700;
+    font-size: 4.8rem;
+    line-height: 4.8rem;
+    letter-spacing: -0.05rem;
+    color: #242b37;
+    margin-bottom: 2.7rem;
+    margin-top: 5.5rem;
+    width: 400px;
+  }
+
+  .enjoyable-place__text-paragraph {
+    font-weight: 400;
+    font-size: 2rem;
+    line-height: 3rem;
+    color: #242b37;
+    width: 490px;
+  }
+}
+
+/* Locally-food */
+
+.locally-food__container {
+  background-image: url(images/enjoy-bg-2.svg);
+  background-repeat: no-repeat;
+  background-position-y: 33rem;
+  background-position-x: right;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  top: 8rem;
+}
+
+.locally-food__image {
+  width: 540px;
+  height: 720px;
+  /* box-shadow: 0 10px 20px #979797, 0 6px 20px#979797; */
+}
+
+.locally-food__text {
+  display: flex;
+  flex-direction: column;
+
+  .locally-food__text-img {
+    width: 71px;
+    height: 7px;
+  }
+
+  .locally-food__text-heading {
+    font-weight: 700;
+    font-size: 4.8rem;
+    line-height: 4.8rem;
+    letter-spacing: -0.5px;
+    color: #242b37;
+    margin-bottom: 2.7rem;
+    margin-top: 5.5rem;
+    width: 400px;
+  }
+
+  .locally-food__text-paragraph {
+    font-weight: 400;
+    font-size: 2rem;
+    line-height: 3rem;
+    color: #242b37;
+    width: 450px;
+  }
+}
+
+.locally-food__shape {
+  position: relative;
+  width: 160px;
+  height: 76px;
+  top: -20rem;
+  left: 108.5rem;
+}
+
+/* Menu */
+
+.menu {
+  background-color: #111111;
+  padding: 15rem 0 10rem 0;
+}
+
+.menu__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.menu__left {
+  display: flex;
+  flex-direction: column;
+
+  .menu__left-img {
+    width: 71px;
+    height: 7px;
+  }
+
+  .menu__left-heading {
+    font-weight: 700;
+    font-size: 4.8rem;
+    line-height: 4.8rem;
+    letter-spacing: -0.5px;
+    color: #ffffff;
+    margin-bottom: 2.7rem;
+    margin-top: 5.5rem;
+    width: 490px;
+  }
+
+  .menu__left-paragraph {
+    font-weight: 400;
+    font-size: 2rem;
+    line-height: 3rem;
+    color: #ffffff;
+    width: 490px;
+  }
+}
+
+.menu__right {
+  display: flex;
+  flex-direction: column;
+  row-gap: 2.4rem;
+  width: 570px;
+}
+
+.menu__card {
+  border-bottom: 0.1rem solid;
+  border-color: rgb(255, 255, 255, 0.14);
+  display: flex;
+  align-items: center;
+  column-gap: 3rem;
+  padding-bottom: 2.4rem;
+}
+
+.menu__card-images-container {
+  display: flex;
+}
+
+.menu__card-shape {
+  padding-bottom: 4.5rem;
+}
+
+.menu__card-text {
+  display: flex;
+  flex-direction: column;
+  row-gap: 0.6rem;
+}
+
+.menu__card-text-heading {
+  font-weight: 700;
+  font-size: 2rem;
+  line-height: 2rem;
+  letter-spacing: -0.025rem;
+  color: #ffffff;
+}
+
+.menu__card-text-paragraph {
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 2.6rem;
+  color: #ffffff;
+}
+
+.card-border {
+  border: none;
+}
+
+/* Family */
+
+.family {
+  background-image: url(images/enjoy-bg.svg);
+  background-repeat: no-repeat;
+  background-position-x: -40rem;
+  padding-top: calc(16rem - 7.2rem);
+  padding-bottom: 16rem;
+}
+
+.family__inside {
+  display: flex;
+  align-items: center;
+}
+
+.family__image {
+  width: 540px;
+}
+
+.family__shape {
+  position: relative;
+  top: 4rem;
+  right: 4rem;
+}
+
+.family__right {
+  display: flex;
+  flex-direction: column;
+  row-gap: 8rem;
+}
+
+.family__info {
+  display: flex;
+  flex-direction: column;
+  row-gap: 1.9rem;
+  padding-left: 12.5rem;
+
+  .family__info-heading {
+    font-weight: 700;
+    font-size: 4.8rem;
+    line-height: 4.8rem;
+    letter-spacing: -0.05rem;
+    color: #242b37;
+  }
+
+  .family__info-paragraph {
+    font-weight: 400;
+    font-size: 2rem;
+    line-height: 3rem;
+    color: #232536;
+  }
+}
+
+.family__button {
+  font-weight: 600;
+  font-size: 1.7rem;
+  line-height: 1.6rem;
+  color: #ffffff;
+  letter-spacing: 0.25rem;
+  padding: 2.5rem 5.5rem 2.3rem 5.4rem;
+  border: 1px solid #ffffff;
+  width: 270px;
+  margin-top: 4rem;
+  background-color: #111111;
+
+  &:hover {
+    background-color: white;
+    color: black;
+    border: 0.1rem solid #111111;
+  }
+}
+
+.family__nav {
+  display: flex;
+  align-items: start;
+  column-gap: 3.2rem;
+}
+
+.family__ul {
+  display: flex;
+  flex-direction: column;
+  row-gap: 1.2rem;
+  margin-top: -1.4rem;
+
+  .family__ul-li:nth-child(1) {
+    color: #4c4c4c;
+  }
+
+  .family__ul-li:nth-child(2) {
+    opacity: 0.5;
+  }
+
+  .family__ul-li:nth-child(3) {
+    opacity: 0.5;
+  }
+
+  .family__ul-li {
+    font-weight: 600;
+    font-size: 1.7rem;
+    line-height: 2.8rem;
+    letter-spacing: 0.25rem;
+  }
+}
+
+/* Reservation */
+
+.reservation {
+  background-image: url(images/footer-bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 9.6rem 0 9.6rem 0;
+}
+
+.reservation__container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  .reservation__heading {
+    font-weight: 700;
+    font-size: 4.8rem;
+    line-height: 5.8rem;
+    letter-spacing: -0.05rem;
+    color: #ffffff;
+  }
+
+  .reservation__button {
+    font-weight: 600;
+    font-size: 1.7rem;
+    line-height: 1.6rem;
+    color: #ffffff;
+    letter-spacing: 0.25rem;
+    padding: 2.5rem 5.5rem 2.3rem 5.4rem;
+    border: 0.1rem solid #ffffff;
+    width: 270px;
+    margin-top: 4rem;
+    background-color: transparent;
+
+    &:hover {
+      background-color: white;
+      color: black;
+      border-color: white;
+    }
+  }
+}
+
+/* FOOTER */
+
+.footer {
+  background-color: #111111;
+  padding: 8rem 0;
+}
+
+.footer__container {
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+}
+
+.footer__info {
+  display: flex;
+  align-items: center;
+  column-gap: 12rem;
+}
+
+.footer__place,
+.footer__time {
+  display: flex;
+  flex-direction: column;
+
+  li {
+    color: #ffffff;
+    font-weight: 400;
+    font-size: 1.4rem;
+    line-height: 2.8rem;
+    letter-spacing: 0.2rem;
+    text-transform: uppercase;
+  }
+}
